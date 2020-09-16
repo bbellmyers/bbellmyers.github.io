@@ -12,7 +12,7 @@ I have designed and implemented the client architecture for several enterprise, 
 
 I believe I possess excellent leadership, team\-building, presentation and communication skills\. Some of the clients I have had the pleasure to work with include Standard & Poor, Union Bank of California, US Bank, Wells Fargo, Minnesota Life, Cargill, Musicland \(Sam Goody\), via World Network and Infomarkets\.com\.
 
-I am currently employed at PTC as a Senior Technical Consultant\. I continue to be active in investigating cutting edge user interface technologies and using these to create interfaces which are both visually and technically elegant\.
+I am currently employed at Healthpartners as a Senior Web Developer\. I continue to be active in investigating cutting edge user interface technologies and using these to create interfaces which are both visually and technically elegant\.
 
 ## Specialties
 
@@ -33,15 +33,9 @@ the visual and interaction patterns defined by the design system.
 
 ### Senior Technical Consultant at PTC December 2011 \- November 2018
 
-I provide hands\-on technical and agile process leadership on a small team creating the web and mobile interfaces for enterprise products\.
+I provided hands\-on technical and agile process leadership on a small team creating the web and mobile interfaces for enterprise products, including Windchill, Thingworx and FlexPLM.
 
-I am currently working on a massive client upgrade for the FlexPLM product, which provides robust PLM capabilities to retail customers\. The current product is implemented as a customization of the Windchill product, using Java 8 and JSPs to generate user interface\.
-
-My task was to create a new client approach which would modernize the UI and support the new PTC design system from the UX group\. I am also contributing to an effort to implement an atomic design system in\-house which flows from initial concepts in the UX and visual design groups to a collection of fully functional complex widgets, best practices and code examples\.
-
-I prototyped and am now helping to implement a set of user interface widgets which implement the visual concepts of the design system, using Polymer 2 web components\. The widgets are then provided as an npm library which can be used directly as custom tags in JavaScript apps, or wrapped for PTC's Thingworx product, so that the look and feel of apps are consistent whether they are custom coded or generated using Thingworx Mashup Builder\.
-
-The new FlexPLM client is implemented with Angular 6, using the Polymer widgets in component templates as required, and accessing the legacy FlexPLM system via RESTful APIs over AJAX\. Mashups from Thingworx will be strategically included in the new client, where Thingworx functionality is advantageous to users\. This new client will manage local state with the ngRX Redux implementation\.
+I prototyped and helped to implement a set of user interface widgets which implement the visual concepts of the design system, using Polymer 2 web components\. The widgets are then provided as an npm library which can be used directly as custom tags in JavaScript apps, or wrapped for PTC's Thingworx product, so that the look and feel of apps are consistent whether they are custom coded or generated using Thingworx Mashup Builder\.
 
 ### Principal Software Engineer at PTC May 2007 \- December 2011 \(4 years 8 months\)
 
@@ -51,16 +45,13 @@ Served as Scrum master, helping PTC adopt a truly agile approach to developing s
 
 ### Team Lead, UI Development at US Bank 2001 \- 2007 \(7 years\)
 
-### Director, User Interface Guild 1998 \- 2001 \(4 years\)
+### Director, User Interface Guild at Perficient 1998 \- 2001 \(4 years\)
 
 ### User Interface Designer at Perficient 1998 \- 2001 \(4 years\)
 
 ### Software Engineer at Andersen Consulting 1996 \- 1998 \(3 years\)
 
-### Software Engineer 1996 \- 1998 \(3 years\)
-
 ## Education
 
-### State University of New York College at Purchase Bachelor of Fine Arts, Acting, 1982 \- 1986
-
-### University of St\. Thomas
+- State University of New York College at Purchase Bachelor of Fine Arts, Acting, 1982 \- 1986
+- University of St\. Thomas

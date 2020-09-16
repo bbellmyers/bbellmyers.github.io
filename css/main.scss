@@ -2,8 +2,8 @@
 ---
 
 @font-face {
-  font-family: 'Corbel';
-  src: url('../fonts/CORBEL.TTF') format('truetype');
+  font-family: 'Actor';
+  src: url('../fonts/Actor-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,9 +13,10 @@
 }
 
 body {
-  font-family: 'Corbel', 'Open Sans', sans-serif;
+  font-family: 'Actor', 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #e7dcc8;
   background-image: url(../images/linen.jpg);
   background-repeat: repeat;
 }
@@ -110,6 +111,10 @@ footer ul li {
 
 main {
   padding: 0 1rem;
+
+  @media (min-width: 768px) {
+    padding: 0 2rem;
+  }
 
   a {
     color: #0041f481;
