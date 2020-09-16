@@ -16,18 +16,18 @@ body {
   font-family: 'Corbel', 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
+  background-image: url(../images/linen.jpg);
+  background-repeat: repeat;
 }
 
-nav,
-main,
-footer {
-  margin-left: auto;
-  margin-right: auto;
+.wrapper {
+  background-color: white;
+  margin: 0 auto;
   max-width: 100%;
-  padding: 0 1em;
 
   @media (min-width: 768px) {
     max-width: 700px;
+    box-shadow: 0 0 30px #6e6d6b;
   }
 
   @media (min-width: 992px) {
@@ -35,12 +35,18 @@ footer {
   }
 }
 
+nav,
+main,
+footer {
+  padding: 0 1em;
+}
+
 nav {
   height: 72px;
   background-color: white;
-  border-bottom: 1px solid #a8a6a4;
   display: flex;
   align-items: center;
+  box-shadow: 0 0 4px #6e6d6b;
 }
 
 footer {
