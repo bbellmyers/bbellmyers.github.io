@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Corbel';
-  src: url('fonts/CORBELL.ttf') format('truetype');
+  src: url('../fonts/CORBEL.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -83,10 +83,9 @@ nav ul {
         text-decoration: underline;
       }
 
-      &.sitename {
-        font-size: 1.5rem;
-
-        @media (min-width: 768px) {
+      @media (min-width: 768px) {
+        &.sitename {
+          font-size: 1.5rem;
           margin-right: 1.25rem;
         }
       }
