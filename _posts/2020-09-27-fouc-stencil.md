@@ -85,10 +85,11 @@ than the human eye.
 And, it doesn't matter if your component is using shadow DOM or not, you
 still get a flash, FYI. Yeah, I thought so too. No, doesn't help.
 
-Also, Stencil generates a style rule for EVERY component in your library. For
-our library of 100 components, it's one long css rule.
+Also, Stencil generates a style rule for EVERY component in your library. In this
+one component example, thats no biggie. For our library of 100 components,
+it's one long css rule.
 
-### Our previous attempts
+### Previous attempts
 
 A number of our components do something similar, by applying
 :not(.hydrated){ visibility: hidden } rules to components with a \<slot
@@ -112,31 +113,25 @@ the static CSS file.  Not great, but it\'s a baseline to start from.  I ran my
 the development build of the app, and it\'s not optimized, etc. 
 Nevertheless:
 
-![](media/image4.png)
+![](/media/lighthouse1-no-mask.png)
 
 And here\'s what it was AFTER putting in that static file:
 
-![](media/image5.png)
+![](/media/lighthouse2-all-mask.png)
 
-OUCH!  What\'s that about?
-
-Well, take a look at the stats:
-
-- First Contentful Paint increased by 0.2s
-
-- Time to Interactive increased by 0.3s
+- First Contentful Paint is slightly better
+- Speed Index has turned orange, but the value is the same
 
 Interestingly, Largest Contentful Paint and the Speed Index are slightly
 better, but not better enough.  Even more interesting, Cumulative Layout
 Shift has NOT CHANGED AT ALL.
 
-So what to do?
+Let's see if we can do better.
 
 ### Mask what Needs Masking
 
 So, hiding components before they are hydrated makes the Flash of
-Unstyled Content go away.  But it impacts our Lighthouse score too
-much.  So what to do?
+Unstyled Content go away.  But it impacts our Lighthouse score.  So what to do?
 
 Well, it turns out MOST components don\'t need to be hidden, they don\'t
 contain static DOM elements anyway.  Only those with \<slots /\> are a
@@ -144,14 +139,11 @@ problem here.  And not even all of those are normally an issue.  So we
 can focus our efforts here, and create a file that only hides slotted
 components.
 
-Much smaller, and it only hides what needs to be hidden.  Plus I\'ve
-created an automated generation mechanism, which is neat, but a subject
-for another article.  Remind me to talk about the evils of global,
-unscoped, styles sometime.
+This style is much smaller, and it only hides what needs to be hidden.
 
 So, how does the app perform with this new, smaller, css file?
 
-![](media/image6.png)
+![](/media/lighthouse3-some-mask.png)
 
-BINGO!  Not only is the FOUC gone, but we\'ve even tweaked our starting
-score by 1 point from 62 to 63.  Not bad.
+BINGO!  Not only is the FOUC gone, but we\'ve even tweaked our speed index
+and time to interactive.  Not bad.
