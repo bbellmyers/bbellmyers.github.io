@@ -40,7 +40,7 @@ Note the FOUC at the start.
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-This example app has one component, so it's very fast. Our library has close
+This example app has one component, so it's very fast. Our actual library has close
 to 100 components.
 
 ### Hydrated Components
@@ -51,14 +51,10 @@ components are rendered on a page.  Each of these steps takes a very
 short, but measurable, amount of time:
 
 1.  The custom tag is registered with the browser (first time only)
-
 2.  Tag instance is initialized + connected to the DOM
-
 3.  CSS for this component is appended to the head of the document as a
     \<style\> tag.
-
 4.  Tag instance is rendered
-
 5.  The tag is marked with the class \"hydrated\".
 
 So, a brief period of time elapses between the time that the document
