@@ -2,7 +2,23 @@
 layout: default
 title: Bruce Bell-Myers
 ---
+
 <div class="blurb">
   <h1>Hi there, I'm Bruce Bell-Myers</h1>
-  <p><a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+  <p>
+    This my technical blog. I have been developing front end software for many years, and I hope to use this forum to
+    share what I have learned and join the conversation about moving the web forward to be more useful and beautiful.
+  </p>
+  <p>
+    {% assign post = site.posts.first %}
+    <h2>{{post.date | date: '%B %d, %Y' }}: {{ post.title }}</h2>
+    <div>
+      {{ post.content | truncate: 200 }}...<br />
+      <a href="{{ post.url }}">Read more...</a>
+    </div>
+    <p>
+      <a href="/blog">More blog entries</a>
+    </p>
+  </p>
+</div>
+<!-- /.blurb -->

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bruce Bell-Myers, first post."
+title: 'First post.'
 date: 2020-09-14
 ---
 
