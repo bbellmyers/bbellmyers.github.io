@@ -17,7 +17,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #e7dcc8;
-  background-image: url(../images/linen.jpg);
+  background-image: url(../media/linen.jpg);
   background-repeat: repeat;
 }
 
@@ -137,4 +137,12 @@ main {
   background-color: #d8d5d2;
   margin: 0 0 0.75rem 0.75rem;
   list-style: none;
+}
+
+video {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
 }
